@@ -1,12 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hotel templates</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hotel templates</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- w3.css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+
+<body id="body">
+  <!--start menu bar -->
+
+  <ul>
+    <li><a href="#logo" class="active"><i class="fa fa-bed "></i>Logo</a>
+    </li>
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="right"><a href="#book_now">Book Now</a></li>
+
+  </ul>
+
+
+  <!--end menu bar -->
+
+  <!-- start header here -->
+  <header class="header" id="header">
+    <img src="image/header.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+    <div class="display_left  row w-100">
+      <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 ">
+
+
+        <div class="display_left_title">
+          <h2><i class="fa fa-bed margin-right"></i>Hotel Name</h2>
+        </div>
+        <div class="w3-container header_form w3-padding-16 display_form ">
+          <form action="#" target="_self">
+            <div class="row">
+              <div class="row_half margin-bottom col-md-6">
+                <label><i class="fa fa-calendar-o"></i> Check In</label>
+                <input class="header_form_input  d-block" type="text" placeholder="DD MM YYYY" name="CheckIn"
+                  required="">
+              </div>
+              <div class="row_half col-md-6">
+                <label><i class="fa fa-calendar-o"></i> Check Out</label>
+                <input class="header_form_input " type="text" placeholder="DD MM YYYY" name="CheckOut" required="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="row_half margin-bottom col-md-6">
+                <label><i class="fa fa-male"></i> Adults</label>
+                <input class="header_form_input " type="number" value="1" name="Adults" min="1" max="6">
+              </div>
+              <div class="row_half col-md-6">
+                <label><i class="fa fa-child"></i> Kids</label>
+                <input class="header_form_input " type="number" value="0" name="Kids" min="0" max="6">
+              </div>
+            </div>
+            <button class="header_button" type="submit"><i class="fa fa-search "></i> Search
+              availability</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <div class=" col-md-5 col-lg-6">
+    </div> -->
+  </header>
+  <!-- end header here -->
+
+  <!--start Rooms -->
+  <div class="rooms" id="rooms">
+    <h3>Rooms</h3>
+    <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+  </div>
+  <!-- room check form -->
+
+  <div class="row room_main">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="padding-8  col-sm-6 w25">
+          <label><i class="fa fa-calendar-o"></i> Check In</label>
+          <input class="input " type="text" placeholder="DD MM YYYY">
+        </div>
+        <div class="padding-8  col-sm-6 w25">
+          <label><i class="fa fa-calendar-o"></i> Check Out</label>
+          <input class="input " type="text" placeholder="DD MM YYYY">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="padding-8  col-sm-4 w16_66">
+          <label><i class="fa fa-male"></i> Adults</label>
+          <input class="input " type="number" placeholder="1">
+        </div>
+        <div class="padding-8  col-sm-4 w16_66">
+          <label><i class="fa fa-child"></i> Kids</label>
+          <input class="input " type="number" placeholder="0">
+        </div>
+        <div class="padding-8 col-sm-4 w16_66">
+          <label><i class="fa fa-search"></i> Search</label>
+          <button class="form_button w3-button w3-block">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--start room card -->
+  <div class="row room_card">
+    <div class="col-sm-4 card_column">
+      <div class="card rounded-0 border-0 ">
+        <img src="image/room_single.jpg" class="card-img-top rounded-0" alt="room_single">
+        <div class="card-body">
+          <div class="w3-white">
+            <h3>Single Room</h3>
+            <h6>From $99</h6>
+            <p class="bed_type"> Single bed</p>
+            <p>15m<sup>2</sup></p>
+            <p><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+            <button class="room_card_button w3-black w3-margin-bottom">Choose Room</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 card_column">
+      <div class="card rounded-0 border-0">
+        <img src="image/room_double.jpg" class="card-img-top rounded-0" alt="room_single">
+        <div class="card-body">
+          <div class=" w3-white">
+            <h3>Double Room</h3>
+            <h6>From $149</h6>
+            <p class="bed_type"> Queen-size bed</p>
+            <p>25m<sup>2</sup></p>
+            <p><i class="fa fa-bath"></i> <i class="fa fa-phone">
+              </i> <i class="fa fa-wifi"></i>
+              </i> <i class="fa fa-tv"></i></p>
+            <button class="room_card_button w3-black w3-margin-bottom">Choose Room</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 card_column">
+      <div class="card rounded-0 border-0">
+        <img src="image/room_deluxe.jpg" class="card-img-top rounded-0" alt="room_single">
+        <div class="card-body">
+          <div class="w3-white">
+            <h3>Deluxe Room</h3>
+            <h6>From $199</h6>
+            <p class="bed_type"> King-size bed</p>
+            <p>40m<sup>2</sup></p>
+            <p><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i>
+              </i> <i class="fa fa-tv"></i>
+              </i> <i class="fa fa-glass"></i>
+              <i class="fa fa-cutlery"></i>
+            </p>
+            <button class="room_card_button w3-black w3-margin-bottom">Choose Room</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--end room card -->
+
+
+  <!--end Rooms section -->
+
+
+  <!-- start about -->
+  <div class="about row" id="about">
+    <div class="col-lg-4">
+
+      <h3>About</h3>
+      <h6>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+      <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i
+          class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i
+          class="fa fa-cc-paypal w3-large"></i></p>
+
+    </div>
+    <div class="col-lg-8">
+
+      <!-- Image of location/map -->
+      <img src="image/map.jpg" class="w3-greyscale" style="width:100%;">
+
+    </div>
+  </div>
+  <!-- end about -->
+  <!--  start address here -->
+  <div class="ad_row">
+    <div class="row address_row text-center">
+      <div class="col-sm-4 "><i class="fa fa-map-marker text-red"></i> 423 Some adr, Chicago, US</div>
+      <div class="col-sm-4 "><i class="fa fa-phone text-red"></i> Phone: +00 151515</div>
+      <div class="col-sm-4 "><i class="fa fa-envelope text-red"></i> Email: mail@mail.com</div>
+    </div>
+  </div>
+  <!--  start address here -->
+  <div class="panel red leftbar padding-32 rounded-0">
+    <h6><i class="fa fa-info deep-orange padding margin-right"></i> On demand, we can offer playstation, babycall,
+      children care, dog equipment, etc.</h6>
+  </div>
+  <!--  end address here -->
+
+  <!--start Our Hotels -->
+  <div class="w3-container our_hotels">
+    <h3>Our Hotels</h3>
+    <h6>You can find our hotels anywhere in the world:</h6>
+  </div>
+  <div class="row w-100 our_hotels_main " style="padding: 0px 8px;">
+    <div class="col-sm-6 first_half">
+      <div class="w3-display-container">
+        <img src="image/cinqueterre.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="display-bottomleft w3-padding">Cinque Terre</span>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-6 hotel_image_half">
+          <div class="w3-display-container">
+            <img src="image/newyork2.jpg" alt="New York" style="width:100%">
+            <span class="display-bottomleft w3-padding">New York</span>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 hotel_image_half">
+          <div class="w3-display-container">
+            <img src="image/sanfran.jpg" alt="San Francisco" style="width:100%">
+            <span class="display-bottomleft w3-padding">San Francisco</span>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 hotel_image_half">
+
+
+          <div class="w3-display-container">
+            <img src="image/pisa.jpg" alt="Pisa" style="width:100%">
+            <span class="display-bottomleft w3-padding">Pisa</span>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 hotel_image_half">
+
+          <div class="w3-display-container">
+            <img src="image/paris.jpg" alt="Paris" style="width:100%">
+            <span class="display-bottomleft w3-padding">Paris</span>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Our Hotels -->
+
+  <!--start Get the best offers first! -->
+  <div class="get_the_best">
+    <div class="get_the_best_sub_main w3-container padding-32"
+     >
+      <h2>Get the best offers first!</h2>
+      <p>Join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="get_input" type="text" placeholder="Your Email address">
+      <button type="button" class="get_button">Subscribe</button>
+    </div>
+  </div>
+  <!--end Get the best offers first! -->
+
+
+  <!--start contact here -->
+  <div class="w3-container contact" id="contact">
+    <h2>Contact</h2>
+    <p class="first_p">If you have any questions, do not hesitate to ask them.</p>
+    <i class="fa fa-map-marker text-red " ></i><span> Chicago, US</span><br>
+    <i class="fa fa-phone text-red" ></i><span> Phone: +00 151515</span><br>
+    <i class="fa fa-envelope text-red" > </i><span> Email: mail@mail.com</span><br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class=" padding-16 input_border" type="text" placeholder="Name" required="" name="Name"></p>
+      <p><input class=" padding-16 input_border" type="text" placeholder="Email" required="" name="Email"></p>
+      <p><input class="padding-16 input_border" type="text" placeholder="Message" required="" name="Message"></p>
+      <p class="p_button"><button  type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+   <!--end contact here -->
+
+   <!--start footer here -->
+   <footer class="text-center">
+    <h5>Find Us On</h5>
+    <div class="padding-16">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="#body"  class="power_by">w3.css</a></p>
+  </footer>
+   <!--end footer here -->
+  
+
+
 </body>
+
 </html>

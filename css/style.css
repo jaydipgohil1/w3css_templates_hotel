@@ -1,0 +1,595 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1 !important;
+    font-size: 15px;
+    line-height: 1.5;
+
+
+}
+
+.row,
+.header {
+    overflow-x: hidden;
+
+}
+
+
+.header,
+.rooms,
+.room_main,
+.room_card,
+.about,
+.our_hotels,
+.our_hotels_main,
+.panel,
+.ad_row,
+.get_the_best,
+.contact {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+
+
+
+
+* {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+
+}
+
+/* start menu bar  here */
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    z-index: 1;
+    line-height: 1.5;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+li a:hover:not(.active),
+ul li a:hover {
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+
+}
+
+.active {
+    color: #fff;
+    background-color: #f44336;
+
+}
+
+#logo svg {
+    padding: 5px;
+
+}
+
+
+li a:hover,
+.active:hover .dropbtn .active {
+    background-color: lightgray;
+    color: black;
+}
+
+.right {
+    float: right;
+    background-color: #f1f1f1;
+
+}
+
+li i {
+    margin-right: 16px;
+}
+
+@media (max-width: 600px) {
+    li {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+}
+
+/* end menu bar  here */
+
+/* start header here*/
+header {
+    position: relative;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+header .display_left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    padding: 8px 0px 8px 16px;
+}
+
+header .display_left_title {
+    background-color: #f44336;
+    padding: 0.01em 16px;
+    color: white;
+}
+
+.w3-container {
+    padding: 16px 16px;
+
+}
+
+header .header_form {
+    background-color: #fff;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.row {
+    /* padding: 8px; */
+}
+
+.row_half {
+    padding: 0px 16px;
+    float: left;
+}
+
+.margin-bottom {
+    margin-bottom: 16px;
+}
+
+.header_form_input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.header h2 {
+    margin: 10px 0;
+    font-weight: 400;
+    padding: 5px 5px
+}
+
+.margin-right {
+    margin-right: 15px;
+}
+
+/* 
+@media (max-width: 650px) {
+    .display_left {
+        width: 100%;
+    }
+}
+
+@media (min-width: 650px) {
+    .display_left {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .display_left {
+        width: 90%;
+    }
+} */
+
+
+
+
+.header_button {
+    color: #fff;
+    background-color: #616161;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    margin-top: 10px;
+}
+
+.header_button:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.header_button i {
+    margin-right: 15px;
+}
+
+.header .paddding-16 {
+    /* padding: 16px ; */
+}
+
+/* end header here*/
+
+/*start rooms */
+.rooms {
+    margin-top: 16px;
+    padding: 16px 16px 0px 16px;
+
+
+}
+
+.input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc !important;
+}
+
+.form_button,
+.room_card_button {
+    padding: 8px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.form_button:hover,
+.room_card_button:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.padding-8 {
+    padding: 8px;
+
+}
+
+div label {
+    font-weight: normal;
+    margin-bottom: 0px !important;
+}
+
+.room_main {
+
+    padding: 0px 8px 16px;
+}
+
+/*end rooms */
+/* room card */
+.room_card h6 {
+    opacity: 0.60;
+    font-size: 16px;
+}
+
+.room_card h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.room_card .bed_type {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.room_card p i {
+    font-size: 18px !important;
+}
+
+.card_column {
+    /* padding: 0px 15.5px; */
+    margin-bottom: 10px;
+}
+
+.about h6 {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.about {
+    padding-top: 20px;
+}
+
+.about img {
+    filter: grayscale(75%);
+    max-width: 100%;
+    height: auto;
+    /* height: 80%;
+   max-height: 100%; */
+}
+
+/* end */
+/*start  adderess */
+.text-red {
+    color: #f44336;
+}
+
+.address_row {
+    margin: 32px 0;
+    font-size: 18px !important;
+}
+
+/* pannel */
+
+.red {
+    color: #fff !important;
+    background-color: #f44336 !important;
+}
+
+.padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+}
+
+.leftbar {
+    border-left: 6px solid #ccc !important;
+}
+
+
+
+.panel {
+    padding: 0.01em 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.deep-orange {
+    color: #fff !important;
+    background-color: #ff5722 !important;
+}
+
+.padding {
+    padding: 8px 16px !important;
+}
+
+.margin-right {
+    margin-right: 16px !important;
+}
+
+.panel h6 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* end panel */
+
+/*start our_hotels */
+
+.our_hotels h3 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.our_hotels h6 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 16px;
+    letter-spacing: 00.5px;
+}
+
+
+
+.w3-display-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.our_hotels .row_padding {
+    padding: 0 8px
+}
+
+.display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+}
+
+.w3-padding {
+    padding: 8px 16px !important;
+}
+
+.hotel_image_half {
+    margin-bottom: 16px !important;
+    padding: 0 8px;
+}
+
+.first_half {
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+
+}
+
+.our_hotels_main {
+
+    padding-bottom: 16px !important;
+}
+
+/*end our_hotels */
+
+/*start  Get the best offers first!*/
+.get_the_best_sub_main {
+    background-color: black;
+    margin: 32px 0;
+    color: white;
+    opacity: 0.60;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.get_the_best_sub_main:hover {
+    opacity: 1;
+}
+
+.padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+}
+
+.get_the_best_sub_main h2 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px
+}
+
+.get_the_best_sub_main p {
+    margin: 15px 0px;
+}
+
+.get_the_best_sub_main .get_input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.get_button {
+    color: #fff;
+    background-color: #f44336;
+    margin-top: 16px !important;
+    padding: 8px 16px;
+}
+
+.get_button:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+/*end Get the best offers first! */
+
+/* start contact here */
+.contact {
+    padding: 8px 16px 16px 16px;
+}
+
+.contact h2 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.contact .first_p {
+    margin: 15px 0px;
+}
+
+.contact form {
+
+    display: block;
+}
+
+.contact i {
+
+    width: 30px;
+}
+
+.contact input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-top: 16px;
+
+}
+
+.contact .input_border {
+    border: 1px solid #ccc !important;
+}
+
+.contact .padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.contact button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px !important;
+    border: none;
+}
+
+.contact button:hover {
+    background-color: lightgray;
+    color: black;
+
+}
+
+.contact .p_button {
+    margin: 15px 0px;
+}
+
+/* end contact here */
+
+/* start footer */
+footer {
+    background-color: black;
+    color: white;
+    /* margin:16px 0px 0px; */
+    padding: 32px 0px;
+}
+
+footer div {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    font-size: 24px !important;
+   
+    
+}
+
+footer h5 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 18px;
+
+
+}
+
+footer p {
+    margin: 15px 0px;
+}
+
+.power_by {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.power_by:hover {
+    color: green;
+}
+
+footer i:hover {
+    opacity: 0.60;
+}
+
+/* end footer */
